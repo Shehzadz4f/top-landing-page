@@ -1,178 +1,187 @@
-body {
-    background-color: black;
-    margin: 0 300px 0 300px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+html {
+    border: solid 1px black;
 }
 
-header, .first, footer {
-    background-color: #1F2937;
-    color: #F9FAF8;
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: solid 1px black;
+    margin: 0;
 }
 
 header {
+    background-color: #1F2937;
     display: flex;
     justify-content: space-between;
-    padding: 24px 125px 30px 125px;
-}
-
-h4 {
-    padding: 0;
-    margin: 0;
-    color: #F9FAF8;
-    font-size: 24px;
-}
-
-.header-links a {
-    text-decoration: none;
-    color: #F9FAF8;
-    font-size: 18px;
-}
-
-.header-links {
-    display: flex;
-    gap: 16px;
-}
-
-.first {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 125px 75px 125px;
-    gap: 32px;
-}
-
-img {
-    flex: 1;
-}
-
-.signup-container {
-    flex: 1;
-}
-
-.about {
-    font-size: 48px;
-    font-weight: bold;
-    margin: 0;
-}
-
-h2 {
-    text-align: center;
-    font-size: 36px;
-    margin-top: 0;
-}
-
-.second,
-.forth {
-    background-color: white;
-}
-
-figure {
-    display: flex;
-    justify-content: center;
-    flex: 1;
-    gap: 16px;
-    padding: 0 175px 207px 175px;
-    margin: 0;
-}
-
-.image-1, 
-.image-2,
-.image-3,
-.image-4 {
-    display: flex;
-    width: 160px;
-    flex-direction: column;
-    gap: 8px;
-    align-items: center;
-    text-align: center;
-}
-
-.third {
-    height: 340px;
-    background-color: #E5E7EB;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 250px 0 250px;
+    padding: 8px 60px;
     
 }
 
-.quote-author {
-    width: 1000px;
-}
+    h4.header-logo {
+        font-size: 24px;
+        color: #F9FAF8;
+        margin: 0;
+    }
 
-.quote {
-    display: flex;
-    justify-content: stretch;
-    font-size: 36px;    
-    font-style: italic;
-    color: #1F2937;
-}
+    div.header-links {
+        font-size: 18px;
+        display: flex;
+        gap: 16px;
+    }
 
-.author {
-    display: flex;
-    justify-content: flex-end;
-    font-weight: bold;
-    font-size: 24px;
-    margin-right: 38px;
-}
+        .header-links a {
+            color: #E5E7EB;
+            text-decoration: none;
+        }
 
-.forth {
-    height: 220px;
+section.first {
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.call-to-action {
-    background-color: #3882F6;
-    display: flex;
-    width: 1100px;
-    height: 110px;
-    border: solid 4px #3882F6;
-    padding: 0 100px 0 100px;
-    border-radius: 12px;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 32px;
+    padding: 8px 60px;
+    background-color: #1F2937;
 }
 
-.left-side {
+    div.signup-container {
+        width: 400px;
+    }
+
+        h1.about {
+            color: #F9FAF8;
+            font-size: 48px;
+            font-weight: bold ;
+            margin: 0;
+        }
+
+        p {
+            color: #F9FAF8;
+            font-size: 18px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+    
+        .signup-container button {
+            border: solid 1px #3882F6;
+            border-radius: 6px;
+            padding: 4px 16px;
+            color: #F9FAF8;
+            background-color: #3882F6;
+        }
+    
+    .first img {
+        background-color: lightgrey ;
+        width: 400px;
+        height: 215px;
+    }
+
+section.second {
+    background-color: white;
     display: flex;
     flex-direction: column;
-    color: #F9FAF8;
-    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
 }
 
-h3 {
-    margin: 0;
+    section.second h2 {
+        font-size: 32px;
+        font-weight: bold;
+        color: #1F2937;
+    }
+
+    figure {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        gap: 40px;
+    }
+
+        div.image-1,
+        div.image-2,
+        div.image-3,
+        div.image-4 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+            figure img {
+                border: solid 4px #3882F6;
+                border-radius: 12px;
+                height: 100px;
+                width: 100px;
+            }
+
+            figcaption {
+                width: 140px;
+            }
+section.third {
+    background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
 }
 
-.left-side p {
-    margin: 0;
-}
+    p.quote {
+        color: #1F2937;
+        font-size: 36px;
+        font-style: italic;
+    }
+    p.author {
+        color: #1F2937;
+        font-size: 36px;
+        font-weight: 600;
+        align-self: flex-end;
+    }
 
-button {
-    background-color: #3882F6;
-    padding: 4px 16px;
-    color: white;
-    border: solid 2px #F9FAF8;
-    border-radius: 8px;
-    font-weight: 600;
-    margin-top: 35px;
-    margin-bottom: 35px;
-}
-
-.image-1 img,
-.image-2 img,
-.image-3 img,
-.image-4 img {
-    border: solid 4px #3882F6;
-    border-radius: 15px;
-    width: 160px;
-    height: 160px;
-}
-
-footer {
+section.forth {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    padding: 60px;
 }
+
+    .forth .call-to-action {
+        display: flex;
+        gap: 32px;
+        background-color: #3882F6;
+        border: solid 1px #3882F6;
+        border-radius: 12px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 80px 24px 80px;
+        flex-wrap: wrap;
+    }
+
+        .call-to-action .left-side {
+            color: #F9FAF8;
+
+        }
+
+            h3 {
+                margin-bottom: 0;
+            }
+
+        .forth button {
+            border: solid 1px #F9FAF8;
+            border-radius: 6px;
+            padding: 4px 16px;
+            color: #F9FAF8;
+            background-color: #3882F6;
+            height: 36px;
+            width: 100px;
+            margin: 24px;
+            flex-shrink: 0;
+        }
+
+footer {
+    background-color: #1F2937;
+    text-align: center;
+    padding: 10px;
+}
+
+    footer p {
+        color: #F9FAF8;
+    }
